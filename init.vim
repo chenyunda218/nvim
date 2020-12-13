@@ -11,6 +11,10 @@ nnoremap <Leader>8 8gt
 
 let g:python3_host_prog = '/usr/local/bin/python3'
 
+" Terminal map
+tnoremap <Esc> <C-\><C-n>
+nnoremap ter :tabnew<CR>:terminal<CR>
+
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
@@ -31,22 +35,6 @@ set number
 map <C-n> :NERDTreeToggle<CR>
 
 " Tab config
-nnoremap <F1> <Nop>
-inoremap <F1> <Nop>
-nnoremap <F1> 1gt
-inoremap <F1> <ESC>1gt
-nnoremap <F2> 2gt
-inoremap <F2> <ESC>2gt
-nnoremap <F3> 3gt
-inoremap <F3> <ESC>3gt
-nnoremap <F4> 4gt
-inoremap <F4> <ESC>4gt
-nnoremap <F5> :tabm -1<CR>
-nnoremap <F6> :tabm +1<CR>
-nnoremap <F7> gT
-nnoremap <F8> gt
-inoremap <F7> <ESC>gT<CR>
-inoremap <F8> <ESC>gt<CR>
 nnoremap <Left> <Nop>
 nnoremap <Left> gT
 nnoremap <Right> <Nop>
