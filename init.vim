@@ -1,3 +1,16 @@
+" Leader
+let mapleader=";"
+nnoremap <Leader>1 1gt
+nnoremap <Leader>2 2gt
+nnoremap <Leader>3 3gt
+nnoremap <Leader>4 4gt
+nnoremap <Leader>5 5gt
+nnoremap <Leader>6 6gt
+nnoremap <Leader>7 7gt
+nnoremap <Leader>8 8gt
+
+let g:python3_host_prog = '/usr/local/bin/python3'
+
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
@@ -34,14 +47,21 @@ nnoremap <F7> gT
 nnoremap <F8> gt
 inoremap <F7> <ESC>gT<CR>
 inoremap <F8> <ESC>gt<CR>
+nnoremap <Left> <Nop>
+nnoremap <Left> gT
+nnoremap <Right> <Nop>
+nnoremap <Right> gt
+nnoremap <S-Right> :tabm +1<CR>
+nnoremap <S-Left> :tabm -1<CR>
 
 " Cursor move
 nnoremap <Enter> <Nop>
 nnoremap <Enter> Gzz
 nnoremap J <Nop>
-nnoremap J <C-e>
+nnoremap J <C-e>j
 nnoremap K <Nop>
-nnoremap K <C-y>
+nnoremap K <C-y>k
+nnoremap H <Nop>
 
 " Save
 nnoremap <C-s> :w<CR>
