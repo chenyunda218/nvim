@@ -9,7 +9,7 @@ vim.o.relativenumber = true
 vim.g.mapleader = ";"
 -- Mapping
 -- Map key function
-local function map(mode, lhs, rhs, opts)
+function map(mode, lhs, rhs, opts)
   local options = { noremap=true, silent=true }
   if opts then
     options = vim.tbl_extend('force', options, opts)
@@ -34,6 +34,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({import = "plugins"})
 
 -- BufferLine
-map('n', '<leader>p', ':BufferLinePick<CR>')
+map('n', '<leader>j', ':BufferLinePick<CR>')
 vim.cmd.colorscheme "catppuccin"
 
