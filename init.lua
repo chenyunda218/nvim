@@ -6,16 +6,17 @@ vim.opt.shiftwidth = 2
 vim.o.relativenumber = true
 
 -- Leader key
-vim.g.mapleader = ";"
+vim.g.mapleader = " "
 -- Mapping
 -- Map key function
 function map(mode, lhs, rhs, opts)
-  local options = { noremap=true, silent=true }
+  local options = { noremap = true, silent = true }
   if opts then
     options = vim.tbl_extend('force', options, opts)
   end
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
+
 map('n', '<leader>n', ':NvimTreeToggle<CR>')
 map('n', '<leader>f', ':NvimTreeFocus<CR>')
 -- Lazy vim configuration
@@ -31,9 +32,8 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-require("lazy").setup({import = "plugins"})
+require("lazy").setup({ import = "plugins" })
 
 -- BufferLine
 map('n', '<leader>j', ':BufferLinePick<CR>')
 vim.cmd.colorscheme "catppuccin"
-
