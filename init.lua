@@ -36,4 +36,3 @@ require("lazy").setup({ import = "plugins" })
 
 -- BufferLine
 map('n', '<leader>j', ':BufferLinePick<CR>')
-vim.cmd.colorscheme "catppuccin"
