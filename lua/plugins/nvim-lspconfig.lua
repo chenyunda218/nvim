@@ -8,20 +8,29 @@ return {
         silent = true,
       })
       vim.api.nvim_set_keymap('n', '<leader>l', ':lua vim.lsp.buf.format()<CR>',
-      {
-        noremap = true,
-        silent = true,
-      })
+        {
+          noremap = true,
+          silent = true,
+        })
       -- python
-      lspconfig.pyright.setup {}
+      lspconfig.pyright.setup {
+
+      }
       -- typescript
-      lspconfig.tsserver.setup {}
+      lspconfig.tsserver.setup {
+
+      }
       -- java
       -- lspconfig.jdtls.setup {}
       -- lua
-      lspconfig.lua_ls.setup {}
+      lspconfig.lua_ls.setup {
+      }
       -- golang
-      lspconfig.gopls.setup {}
+      lspconfig.gopls.setup {
+      }
+      -- yaml
+      lspconfig.wgsl_analyzer.setup{}
+
     end,
   }
 }

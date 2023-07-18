@@ -19,6 +19,7 @@ end
 
 map('n', '<leader>n', ':NvimTreeToggle<CR>')
 map('n', '<leader>f', ':NvimTreeFocus<CR>')
+map('n', '<leader>s', ':wa<CR>')
 -- Lazy vim configuration
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
