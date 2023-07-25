@@ -20,6 +20,7 @@ end
 map('n', '<leader>n', ':NvimTreeToggle<CR>')
 map('n', '<leader>f', ':NvimTreeFocus<CR>')
 map('n', '<leader>s', ':wa<CR>')
+map('n', 'qq', ':wqa<CR>')
 -- Lazy vim configuration
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -37,3 +38,5 @@ require("lazy").setup({ import = "plugins" })
 
 -- BufferLine
 map('n', '<leader>j', ':BufferLinePick<CR>')
+-- Copy to clipboard
+vim.opt.clipboard = 'unnamedplus'
