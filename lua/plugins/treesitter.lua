@@ -1,3 +1,4 @@
+-- Syntax highlight
 return {
   "nvim-treesitter/nvim-treesitter",
   config = function()
