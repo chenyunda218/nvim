@@ -29,8 +29,7 @@ return {
       lspconfig.gopls.setup {
       }
       -- yaml
-      lspconfig.wgsl_analyzer.setup{}
-
+      lspconfig.wgsl_analyzer.setup {}
     end,
   }
 }
