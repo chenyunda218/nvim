@@ -5,6 +5,5 @@ return {
     require('dashboard').setup {
       -- config
     }
-  end,
-  dependencies = { {'nvim-tree/nvim-web-devicons'}}
+  end, dependencies = { {'nvim-tree/nvim-web-devicons'}}
 }

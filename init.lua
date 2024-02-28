@@ -20,9 +20,35 @@ end
 map('n', '<leader>n', ':NvimTreeToggle<CR>')
 map('n', '<leader>f', ':NvimTreeFocus<CR>')
 map('n', '<leader>s', ':wa<CR>')
-map('n', 'qq', ':wq<CR>')
-map('n', 'qa', ':wqa<CR>')
-map('n', '<leader>p', ':bprevious<CR>')
+-- BufferLine
+map('n', '<leader>j', ':BufferLinePick<CR>')
+map('n', '<C-h>', ':BufferLineCyclePrev<CR>')
+map('n', '<C-l>', ':BufferLineCycleNext<CR>')
+map('n', '<C-S-h>', ':BufferLineMovePrev<CR>')
+map('n', '<C-S-l>', ':BufferLineMoveNext<CR>')
+vim.api.nvim_set_keymap(
+  'n',
+  '<leader>c',
+  ':wa<CR>:BufferLineCloseOthers<CR>',
+  { noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+  'n',
+  '<leader>x',
+  ':BufferLinePickClose<CR>',
+  { noremap = true, silent = true }
+)
+
+  vim.api.nvim_set_keymap('n', '<leader>d', ':lua vim.lsp.buf.definition()<CR>', {
+    noremap = true,
+    silent = true,
+  })
+  vim.api.nvim_set_keymap('n', '<leader>l', ':lua vim.lsp.buf.format()<CR>',
+    {
+      noremap = true,
+      silent = true,
+    })
+
 -- Lazy vim configuration
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -38,7 +64,5 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({ import = "plugins" })
 
--- BufferLine
-map('n', '<leader>j', ':BufferLinePick<CR>')
 -- Copy to clipboard
 vim.opt.clipboard = 'unnamedplus'
