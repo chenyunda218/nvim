@@ -4,12 +4,12 @@ return {
     require('Comment').setup({
       ignore = '^$',
       toggler = {
-        link = '<leader>/',
-        block = '<leader>/'
+        link = '<C-/>',
+        block = '<C-/>'
       },
       opleader = {
-        link = '<leader>/',
-        block = '<leader>/'
+        link = '<C-/>',
+        block = '<C-/>'
       }
     })
   end

@@ -26,6 +26,8 @@ map('n', '<C-h>', ':BufferLineCyclePrev<CR>')
 map('n', '<C-l>', ':BufferLineCycleNext<CR>')
 map('n', '<C-S-h>', ':BufferLineMovePrev<CR>')
 map('n', '<C-S-l>', ':BufferLineMoveNext<CR>')
+map('n', '<leader>w', '<C-w>')
+
 vim.api.nvim_set_keymap(
   'n',
   '<leader>c',
@@ -39,15 +41,14 @@ vim.api.nvim_set_keymap(
   { noremap = true, silent = true }
 )
 
-  vim.api.nvim_set_keymap('n', '<leader>d', ':lua vim.lsp.buf.definition()<CR>', {
-    noremap = true,
-    silent = true,
-  })
-  vim.api.nvim_set_keymap('n', '<leader>l', ':lua vim.lsp.buf.format()<CR>',
-    {
-      noremap = true,
-      silent = true,
-    })
+vim.api.nvim_set_keymap('n', '<leader>d', ':lua vim.lsp.buf.definition()<CR>', {
+  noremap = true,
+  silent = true,
+})
+vim.api.nvim_set_keymap('n', '<leader>l', ':lua vim.lsp.buf.format()<CR>', {
+  noremap = true,
+  silent = true,
+})
 
 -- Lazy vim configuration
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
