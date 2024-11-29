@@ -3,6 +3,6 @@ return {
 	config = function()
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
-		require("nvim-tree").setup {}
+		require("nvim-tree").setup({})
 	end,
 }
