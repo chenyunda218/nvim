@@ -2,7 +2,7 @@ return {
 	"karb94/neoscroll.nvim",
 	config = function()
 		require("neoscroll").setup({
-			duration_multiplier = 0.5,
+			duration_multiplier = 0.25,
 		})
 	end,
 }
