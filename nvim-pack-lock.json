@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "bufferline.nvim": {
+      "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
+      "src": "https://github.com/akinsho/bufferline.nvim"
+    },
     "lualine.nvim": {
       "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
@@ -16,9 +20,17 @@
       "rev": "beaf41a30c26fd7d6c386d383155cbd65dd554cd",
       "src": "https://github.com/catppuccin/nvim"
     },
+    "nvim-scrollbar": {
+      "rev": "f8e87b96cd6362ef8579be456afee3b38fd7e2a8",
+      "src": "https://github.com/petertriho/nvim-scrollbar"
+    },
     "nvim-tree.lua": {
       "rev": "2f1010ca7764ba2dc2ebe42b34c118631a453076",
       "src": "https://github.com/nvim-tree/nvim-tree.lua"
+    },
+    "nvim-web-devicons": {
+      "rev": "746ffbb17975ebd6c40142362eee1b0249969c5c",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "tokyonight.nvim": {
       "rev": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd",
