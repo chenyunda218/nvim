@@ -1,5 +1,10 @@
 {
   "plugins": {
+    "blink.cmp": {
+      "rev": "4b18c32",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "1.0.0 - 2.0.0"
+    },
     "bufferline.nvim": {
       "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
       "src": "https://github.com/akinsho/bufferline.nvim"
@@ -7,6 +12,10 @@
     "conform.nvim": {
       "rev": "c2526f1",
       "src": "https://github.com/stevearc/conform.nvim"
+    },
+    "elixir-tools.nvim": {
+      "rev": "26aba63a",
+      "src": "https://github.com/elixir-tools/elixir-tools.nvim"
     },
     "lualine.nvim": {
       "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
@@ -47,6 +56,10 @@
     "nvim-tree.lua": {
       "rev": "2f1010ca7764ba2dc2ebe42b34c118631a453076",
       "src": "https://github.com/nvim-tree/nvim-tree.lua"
+    },
+    "nvim-treesitter": {
+      "rev": "9f2dad22",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
       "rev": "746ffbb17975ebd6c40142362eee1b0249969c5c",
