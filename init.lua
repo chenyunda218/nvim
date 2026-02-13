@@ -9,7 +9,9 @@ vim.pack.add({
   {src = "https://github.com/petertriho/nvim-scrollbar"},
   {src = "https://github.com/folke/noice.nvim"},
   {src = "https://github.com/MunifTanjim/nui.nvim"},
-  {src = "https://github.com/rcarriga/nvim-notify"}
+  {src = "https://github.com/rcarriga/nvim-notify"},
+  {src = "https://github.com/windwp/nvim-autopairs"},
+  {src = "https://github.com/stevearc/conform.nvim"},
 })
 
 vim.opt.termguicolors = true
@@ -38,3 +40,5 @@ require("plugins/bufferline")
 require("plugins/nvim-web-devicons")
 require("plugins/nvim-scrollbar")
 require("plugins/noice")
+require("plugins/autopairs")
+require("plugins/conform")
