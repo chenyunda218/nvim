@@ -1,0 +1,28 @@
+{
+  "plugins": {
+    "lualine.nvim": {
+      "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "mason.nvim": {
+      "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "neoscroll.nvim": {
+      "rev": "c8d29979cb0cb3a2437a8e0ae683fd82f340d3b8",
+      "src": "https://github.com/karb94/neoscroll.nvim"
+    },
+    "nvim": {
+      "rev": "beaf41a30c26fd7d6c386d383155cbd65dd554cd",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "nvim-tree.lua": {
+      "rev": "2f1010ca7764ba2dc2ebe42b34c118631a453076",
+      "src": "https://github.com/nvim-tree/nvim-tree.lua"
+    },
+    "tokyonight.nvim": {
+      "rev": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd",
+      "src": "https://github.com/folke/tokyonight.nvim"
+    }
+  }
+}

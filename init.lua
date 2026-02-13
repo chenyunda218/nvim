@@ -1,5 +1,10 @@
-require("config.lazy")
-require("config.lsp")
+vim.pack.add({
+  {src = "https://github.com/mason-org/mason.nvim"},
+  {src = "https://github.com/nvim-lualine/lualine.nvim"},
+  {src = "https://github.com/nvim-tree/nvim-tree.lua"},
+  {src = "https://github.com/karb94/neoscroll.nvim"},
+  {src = "https://github.com/catppuccin/nvim"},
+})
 
 vim.opt.termguicolors = true
 vim.opt.tabstop = 2
@@ -8,29 +13,12 @@ vim.opt.number = true
 vim.opt.ignorecase = true
 vim.opt.shiftwidth = 2
 vim.o.relativenumber = true
+vim.g.mapleader = " "
 
-local keymap = vim.keymap.set
+vim.keymap.set("n", "<leader>n", "<cmd>NvimTreeToggle<CR>", { desc = "toggle nvim tree" })
 
-keymap("n", "<leader>n", "<cmd>NvimTreeToggle<CR>", { desc = "toggle nvim tree" })
-
-keymap("n", "<C-h>", "<C-w>h")
-keymap("n", "<C-j>", "<C-w>j")
-keymap("n", "<C-k>", "<C-w>k")
-keymap("n", "<C-l>", "<C-w>l")
-keymap("n", "<leader>p", "<cmd>BufferLinePick<CR>")
-keymap("n", "gd", vim.lsp.buf.definition, { desc = "jumb to definition" })
-keymap("n", "gr", vim.lsp.buf.references)
-keymap("n", "gi", vim.lsp.buf.implementation)
-keymap("n", "K", vim.lsp.buf.hover)
-
-local builtin = require("telescope.builtin")
-keymap("n", "ff", builtin.find_files, { desc = "Telescope find files" })
-keymap("n", "fg", builtin.live_grep, { desc = "Telescope live grep" })
-keymap("n", "fb", builtin.buffers, { desc = "Telescope buffers" })
-keymap("n", "fh", builtin.help_tags, { desc = "Telescope help tags" })
-keymap("n", "q", "<cmd>bd<CR>", { desc = "Quit and close buffer" })
-keymap("n", "<C-.>", "<cmd>bnext<CR>")
-keymap("n", "<C-,>", "<cmd>bprev<CR>")
-keymap("n", "<leader>,", "<cmd>BufferLineMovePrev<CR>")
-keymap("n", "<leader>.", "<cmd>BufferLineMoveNext<CR>")
-vim.o.winborder = "rounded"
+require("mason").setup()
+require("plugins/lualine")
+require("plugins/nvim-tree")
+require("plugins/neoscroll")
+require("plugins/theme")
