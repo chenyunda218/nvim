@@ -3,10 +3,22 @@ return {
 	version = "*",
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
-		require("elixir").setup({
-			nextls = { enable = false },
-			elixirls = { enable = true },
-			projectionist = { enable = true },
+		local elixir = require("elixir")
+		local elixirls = require("elixir.elixirls")
+
+		elixir.setup({
+			nextls = { enable = true },
+			elixirls = {
+				enable = true,
+				settings = elixirls.settings({
+					dialyzerEnabled = false,
+					enableTestLenses = false,
+				}),
+				on_attach = function(client, bufnr) end,
+			},
+			projectionist = {
+				enable = true,
+			},
 		})
 	end,
 	dependencies = {
