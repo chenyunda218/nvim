@@ -18,4 +18,6 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<leader>p", "<cmd>BufferLinePick<CR>")
 vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 vim.keymap.set("n", "gb", "<cmd>b#<CR>")
+vim.api.nvim_set_keymap("t", "<C-Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
+
 vim.cmd([[colorscheme tokyonight]])
