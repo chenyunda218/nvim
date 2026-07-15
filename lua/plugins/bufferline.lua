@@ -5,5 +5,7 @@ return {
 
 	config = function()
 		require("bufferline").setup({})
+
+		vim.keymap.set("n", "<leader>p", ":BufferLinePick<CR>", { noremap = true, silent = true })
 	end,
 }
