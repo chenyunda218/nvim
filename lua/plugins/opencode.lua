@@ -13,7 +13,7 @@ return {
 			opencode.ask("@buffer: ")
 		end)
 		vim.keymap.set("v", "<leader>oa", function()
-			opencode.ask("@this: ")
+			opencode.ask("")
 		end)
 	end,
 }
