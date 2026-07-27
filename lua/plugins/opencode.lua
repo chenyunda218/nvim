@@ -10,10 +10,10 @@ return {
 			opencode.ask("")
 		end)
 		vim.keymap.set("n", "<leader>ob", function()
-			opencode.ask("@buffer: ")
+			opencode.ask("@buffer ")
 		end)
 		vim.keymap.set("v", "<leader>oa", function()
-			opencode.ask("")
+			opencode.ask("@this ")
 		end)
 	end,
 }
