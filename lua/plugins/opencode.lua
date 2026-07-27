@@ -3,7 +3,7 @@ return {
 	version = "*",
 	config = function()
 		local opencode = require("opencode")
-		vim.keymap.set("n", "<leader>osn", function()
+		vim.keymap.set("n", "<leader>on", function()
 			opencode.command("session.new")
 		end)
 		vim.keymap.set("n", "<leader>oa", function()
