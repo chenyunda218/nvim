@@ -16,5 +16,6 @@ require("oc")
 require("scroll")
 require("session")
 require("mason_setup")
+require("java_setup")
 
 vim.cmd([[colorscheme tokyonight]])
