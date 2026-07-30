@@ -1,8 +1,6 @@
-return {
-	"karb94/neoscroll.nvim",
-	opts = {},
-	config = function()
-		require("neoscroll").setup({
+vim.pack.add({"karb94/neoscroll.nvim"})
+
+require("neoscroll").setup({
 			mappings = { -- Keys to be mapped to their corresponding default scrolling animation
 				"<C-u>",
 				"<C-d>",
@@ -28,5 +26,3 @@ return {
 				"CursorMoved",
 			},
 		})
-	end,
-}
