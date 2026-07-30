@@ -1,9 +1,8 @@
 vim.pack.add({
-		"nvim-tree/nvim-web-devicons",
-"https://github.com/folke/tokyonight.nvim",
-"https://github.com/nvim-lualine/lualine.nvim"
+	"nvim-tree/nvim-web-devicons",
+	"https://github.com/folke/tokyonight.nvim",
+	"https://github.com/nvim-lualine/lualine.nvim",
 })
-
 
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -16,6 +15,6 @@ require("buffer")
 require("oc")
 require("scroll")
 require("session")
+require("mason_setup")
 
-vim.cmd[[colorscheme tokyonight]]
-
+vim.cmd([[colorscheme tokyonight]])

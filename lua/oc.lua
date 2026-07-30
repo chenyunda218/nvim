@@ -1,5 +1,4 @@
-vim.pack.add(
-	{"https://github.com/nickjvandyke/opencode.nvim"})
+vim.pack.add({ "https://github.com/nickjvandyke/opencode.nvim" })
 local opencode = require("opencode")
 vim.keymap.set("n", "<leader>on", function()
 	opencode.command("session.new")
