@@ -19,3 +19,4 @@ local config = {
 	},
 }
 require("nvim-tree").setup(config)
+vim.keymap.set("n", "<leader>n", "<cmd>NvimTreeToggle<cr>")
