@@ -21,7 +21,7 @@ vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = bufnr, desc = "Go t
 vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = bufnr, desc = "Go to Declaration" })
 
 -- 跳转到类型定义（如 TypeScript 中跳转到类型声明）
-vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, { buffer = bufnr, desc = "Go to Type Definition" })
+-- vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, { buffer = bufnr, desc = "Go to Type Definition" })
 
 -- 跳转到实现（接口/抽象方法的实现）
 vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { buffer = bufnr, desc = "Go to Implementation" })
