@@ -17,5 +17,11 @@ require("scroll")
 require("session")
 require("mason_setup")
 require("java_setup")
-
+if vim.fn.has("mac") == 1 then
+	vim.opt.shell = "/bin/zsh"
+	-- 配套 zsh 參數，避免執行命令亂碼
+	vim.opt.shellcmdflag = "-c"
+	vim.opt.shellquote = ""
+	vim.opt.shellxquote = ""
+end
 vim.cmd([[colorscheme tokyonight]])

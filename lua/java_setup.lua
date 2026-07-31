@@ -10,4 +10,3 @@ vim.pack.add({
 })
 
 require("java").setup()
-vim.lsp.enable("jdtls")

@@ -6,13 +6,11 @@ vim.pack.add({
 require("mason").setup()
 require("mason-lspconfig").setup({
 	automatic_enable = {
-		exclude = {
-			"lua_ls",
-			"rust_analyzer",
-			"ts_ls",
-			"jdtls",
-			"java",
-		},
+		"ts_ls",
+		"lua_ls",
+		"rust_analyzer",
+		"jdtls",
+		"java",
 	},
 })
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = bufnr, desc = "Go to Definition" })
