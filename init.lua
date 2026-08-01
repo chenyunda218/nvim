@@ -17,6 +17,7 @@ require("scroll")
 require("session")
 require("mason_setup")
 require("java_setup")
+require("vite_auto_build")
 if vim.fn.has("mac") == 1 then
 	vim.opt.shell = "/bin/zsh"
 	-- 配套 zsh 參數，避免執行命令亂碼
